@@ -1,0 +1,277 @@
+$dimentionPicSecondGroup: 430px
+$margin-leftGroup2: 30px
+$BackgroundTextGroup2: 100px
+
+
+$box-shadow: 1px 5px 10px grey
+$transition: width 2s, height 2s, transform 2s
+$transition-timing-function: ease-in-out
+
+
+$widthImmages: 350px
+$box-shadow: 1px 5px 10px grey
+$transform: scale(1.05)
+
+.container
+	margin: 0px
+	padding: 0px
+
+.effects
+	display: flex
+	background-color: #47191E
+	justify-content: space-around
+	width: 100%
+	
+.logoHeader
+	padding: 3%
+	flex-grow: 0.3
+		
+.bannerHeader
+	padding: 2%
+	flex-grow: 50%
+	
+.navBar
+	background-color: #000
+	width: 100% 
+	display: flex	
+	
+.navBarFormat
+	font-size: 20px
+	display: inline-block
+	padding-right: 0px
+	margin-left: 90px
+
+.active
+	color: white
+	text-decoration: none
+
+.currentTime
+	width: 96%
+	text-align: right 
+
+
+
+
+.GroupTop
+	display: flex
+	margin-left: 7.3%
+.Group1
+	margin-left: 0.4%
+
+.columnRight1
+	width: 150px
+	height: 465px
+	margin-left: 10%
+	
+.navBarTopNews
+	background-color: grey
+	width: 88%
+	margin-left: 8%
+
+.navBarFormatTopNews
+	font-size: 20px
+	display: inline-block	
+
+.activeTopNews
+	color: white
+	text-decoration: none
+
+
+.FirstRow
+	width: 100%
+	display: flex
+
+.imageAndText
+	position: relative
+	box-shadow: $box-shadow
+	-webkit-transition: width 2s, height 2s, -webkit-transform 2s /* Safari */
+	transition: $transition
+	transition-timing-function: $transition-timing-function
+
+.imageAndText:hover
+	width: $widthImmages
+	height: 200px
+	box-shadow: $box-shadow
+	transform: $transform
+	transition-timing-function: $transition-timing-function	
+	
+.textAlignmentFirstRow
+	background-color: #000
+	color: white
+	position: absolute
+	bottom: 0px
+	width: 300px
+	height: 50px
+	margin-left: 5px
+	
+
+.SecondRow
+	width: 100%
+	display: flex
+
+.textAlignmentSecondRow
+	background-color: #000
+	color: white
+	position: absolute
+	bottom: -14px
+	width: 300px
+	height: 50px
+	margin-left: 5px
+	
+
+.images 
+	width: 300px
+	height: 200px
+	margin-left: 5px
+
+.imagesToHide 
+	width: 300px
+	height: 200px
+	margin-left: 5px
+	display: none
+
+.navBarPopular
+	background-color: grey
+	width: 100%
+
+
+.navBarFormatPopular
+	font-size: 20px
+	display: inline-block	
+
+.activePopular
+	color: white
+	text-decoration: none
+
+.developer
+	width: 90%
+	margin-left: 5%
+
+.GroupBottom
+	display: flex
+	margin-left: 7.3%
+
+.images2
+	width: $dimentionPicSecondGroup
+	height: $dimentionPicSecondGroup
+	margin-left: $margin-leftGroup2
+
+.textAlignmentSecondRow2
+	background-color: #000
+	color: white
+	position: absolute
+	bottom: -14px
+	width: $dimentionPicSecondGroup
+	height: $BackgroundTextGroup2
+	margin-left: $margin-leftGroup2
+
+.textAlignmentFirstRow2
+	background-color: #000
+	color: white
+	position: absolute
+	bottom: 0px
+	width: $dimentionPicSecondGroup
+	height: $BackgroundTextGroup2
+	margin-left: $margin-leftGroup2
+.imageAndText2
+	position: relative
+	font-size: 26px
+	box-shadow: $box-shadow
+	-webkit-transition: width 2s, height 2s, -webkit-transform 2s /* Safari */
+	transition: $transition
+	transition-timing-function: $transition-timing-function
+
+.imageAndText2:hover
+	width: $widthImmages
+	height: 200px
+	box-shadow: $box-shadow
+	transform: $transform
+	transition-timing-function: $transition-timing-function	
+
+.SecondRow2
+	width: 100%
+	display: flex
+.FirstRow2
+	width: 100%
+	display: flex
+.columnRight2
+	width: 150px
+	height: 920px
+	margin-left: 10%
+
+.navBarFooter
+	background-color: #000
+	width: 100% 
+	display: flex
+
+.navBarFormatFooter
+	font-size: 20px
+	display: inline-block
+	padding-right: 0px
+	margin-left: 10px
+
+.activeFooter
+	color: white
+	text-decoration: none
+.effectsfooter
+	// display: flex
+	background-color: #000
+	justify-content: space-around
+	width: 100%
+
+.logoHeaderfooter
+	width: 100%
+	text-align: right
+.logoCopyright
+	width: 100%
+	text-align: center
+	color: white
+
+.navBarPopularFooter
+	background-color: grey
+	width: 100%
+
+
+.navBarFormatPopularFooter
+	font-size: 20px
+	display: inline-block	
+
+.activePopular
+	color: white
+	text-decoration: none	
+
+@media only screen and (max-width: 600px)
+	body
+
+	.container
+		
+		// background-color: yellow
+
+	.ImagesToColumn
+		display: flex
+	
+
+	.mobileFlex1
+		display: flex
+		// flex-direction: column
+
+		// display: flex
+		
+		// flex-wrap: wrap
+		// align-items: stretch
+		// display: flex
+		// flex-flow: row
+		// display: flex
+		// flex-wrap: wrap
+
+	.columnRight1
+		display: none 
+
+
+	.columnRight2
+		display: none 
+
+	.imagesToHide
+		display: block 
+
+		
