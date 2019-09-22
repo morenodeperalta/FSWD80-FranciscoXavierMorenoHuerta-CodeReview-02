@@ -25,7 +25,7 @@
   font-size: 20px;
   display: inline-block;
   padding-right: 0px;
-  margin-left: 90px; }
+  margin-left: 60px; }
 
 .active {
   color: white;
@@ -37,15 +37,36 @@
 
 .GroupTop {
   display: flex;
-  margin-left: 7.3%; }
+  justify-content: space-between;
+  margin-left: 7.3%;
+  margin-right: 5%; }
+
+.groupBottom {
+  display: flex;
+  justify-content: space-between; }
 
 .Group1 {
-  margin-left: 0.4%; }
+  margin-left: 0.4%;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap; }
+
+.Group2 {
+  margin-left: 8%;
+  margin-right: 0.5%;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap; }
 
 .columnRight1 {
   width: 150px;
-  height: 465px;
+  height: 455px;
   margin-left: 10%; }
+
+.columnRight2 {
+  width: 150px;
+  height: 910px;
+  margin-right: 55px; }
 
 .navBarTopNews {
   background-color: grey;
@@ -60,23 +81,25 @@
   color: white;
   text-decoration: none; }
 
+.popular {
+  background-color: grey;
+  width: 100%;
+  height: 30px; }
+
+.popular p {
+  font-size: 20px;
+  color: white;
+  margin-top: 3px;
+  margin-left: 40px; }
+
 .FirstRow {
   width: 100%;
-  display: flex; }
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap; }
 
 .imageAndText {
-  position: relative;
-  box-shadow: 1px 5px 10px grey;
-  -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
-  transition: width 2s, height 2s, transform 2s;
-  transition-timing-function: ease-in-out; }
-
-.imageAndText:hover {
-  width: 350px;
-  height: 200px;
-  box-shadow: 1px 5px 10px grey;
-  transform: scale(1.05);
-  transition-timing-function: ease-in-out; }
+  position: relative; }
 
 .textAlignmentFirstRow {
   background-color: #000;
@@ -85,25 +108,27 @@
   bottom: 0px;
   width: 300px;
   height: 50px;
-  margin-left: 5px; }
+  margin: 2%; }
 
 .SecondRow {
   width: 100%;
-  display: flex; }
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap; }
 
 .textAlignmentSecondRow {
   background-color: #000;
   color: white;
   position: absolute;
-  bottom: -14px;
+  bottom: 0px;
   width: 300px;
   height: 50px;
-  margin-left: 5px; }
+  margin: 2%; }
 
-.images {
+.images1 {
   width: 300px;
   height: 200px;
-  margin-left: 5px; }
+  margin: 2%; }
 
 .imagesToHide {
   width: 300px;
@@ -111,76 +136,45 @@
   margin-left: 5px;
   display: none; }
 
-.navBarPopular {
-  background-color: grey;
-  width: 100%; }
-
-.navBarFormatPopular {
-  font-size: 20px;
-  display: inline-block; }
-
-.activePopular {
-  color: white;
-  text-decoration: none; }
-
 .developer {
-  width: 90%;
-  margin-left: 5%; }
-
-.GroupBottom {
-  display: flex;
-  margin-left: 7.3%; }
+  width: 75%;
+  margin-left: 16%; }
 
 .images2 {
-  width: 430px;
-  height: 430px;
-  margin-left: 30px; }
-
-.textAlignmentSecondRow2 {
-  background-color: #000;
-  color: white;
-  position: absolute;
-  bottom: -14px;
-  width: 430px;
-  height: 100px;
-  margin-left: 30px; }
+  width: 450px;
+  height: 450px; }
 
 .textAlignmentFirstRow2 {
   background-color: #000;
   color: white;
   position: absolute;
-  bottom: 0px;
-  width: 430px;
-  height: 100px;
-  margin-left: 30px; }
+  bottom: 5px;
+  width: 450px;
+  height: 100px; }
+
+.textAlignmentSecondRow2 {
+  background-color: #000;
+  color: white;
+  position: absolute;
+  bottom: -20px;
+  width: 450px;
+  height: 100px; }
 
 .imageAndText2 {
   position: relative;
-  font-size: 26px;
-  box-shadow: 1px 5px 10px grey;
-  -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
-  transition: width 2s, height 2s, transform 2s;
-  transition-timing-function: ease-in-out; }
-
-.imageAndText2:hover {
-  width: 350px;
-  height: 200px;
-  box-shadow: 1px 5px 10px grey;
-  transform: scale(1.05);
-  transition-timing-function: ease-in-out; }
-
-.SecondRow2 {
-  width: 100%;
-  display: flex; }
+  font-size: 20px; }
 
 .FirstRow2 {
   width: 100%;
-  display: flex; }
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap; }
 
-.columnRight2 {
-  width: 150px;
-  height: 920px;
-  margin-left: 10%; }
+.SecondRow2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap; }
 
 .navBarFooter {
   background-color: #000;
@@ -202,7 +196,7 @@
   justify-content: space-around;
   width: 100%; }
 
-.logoHeaderfooter {
+.logofooter {
   width: 100%;
   text-align: right; }
 
@@ -219,16 +213,12 @@
   font-size: 20px;
   display: inline-block; }
 
-.activePopular {
-  color: white;
-  text-decoration: none; }
-
-@media only screen and (max-width: 600px) {
-  .ImagesToColumn {
-    display: flex; }
-
-  .mobileFlex1 {
-    display: flex; }
+@media (min-width: 320px) and (max-width: 480px) {
+  .navBarFormat {
+    font-size: 20px;
+    display: inline-block;
+    padding-right: 0px;
+    margin-left: 10px; }
 
   .columnRight1 {
     display: none; }
@@ -236,7 +226,67 @@
   .columnRight2 {
     display: none; }
 
+  .newsToHide {
+    display: none; }
+
   .imagesToHide {
-    display: block; } }
+    display: block;
+    width: 300px;
+    height: 200px; }
+
+  .banner3 {
+    display: none; }
+
+  .bannerHeader {
+    display: none; }
+
+  .currentTime {
+    display: none; }
+
+  .images2 {
+    width: 300px;
+    height: 200px;
+    margin: 2%; }
+
+  .textAlignmentSecondRow2 {
+    background-color: #000;
+    color: white;
+    position: absolute;
+    bottom: -14px;
+    width: 300px;
+    height: 50px;
+    margin: 2%; }
+
+  .textAlignmentFirstRow2 {
+    background-color: #000;
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    width: 300px;
+    height: 50px;
+    margin: 2%;
+    margin-bottom: 2%; }
+
+  .imageAndText2 {
+    position: relative;
+    font-size: 18px; }
+
+  .imageAndText2:hover {
+    width: none;
+    height: none; }
+
+  .navBarFormatFooter {
+    margin-left: 40px;
+    padding-right: 20px; }
+
+  .logoHeader {
+    -webkit-transition: width 3s, height 3s, -webkit-transform 3s;
+    transition: width 3s, height 3s, transform 3s;
+    transition-timing-function: ease-in-out; }
+
+  .logoHeader:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    transition-timing-function: ease-in-out; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,2 +1,2 @@
-var x="Hi my name is Francisco";
-console.log(x);
+var a="Hello from the Console";
+console.log (a);

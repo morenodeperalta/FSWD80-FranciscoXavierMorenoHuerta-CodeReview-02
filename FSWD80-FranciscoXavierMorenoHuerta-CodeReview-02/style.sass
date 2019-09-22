@@ -1,16 +1,8 @@
-$dimentionPicSecondGroup: 430px
+$dimentionPicSecondGroup: 450px
 $margin-leftGroup2: 30px
 $BackgroundTextGroup2: 100px
-
-
-$box-shadow: 1px 5px 10px grey
-$transition: width 2s, height 2s, transform 2s
-$transition-timing-function: ease-in-out
-
-
 $widthImmages: 350px
-$box-shadow: 1px 5px 10px grey
-$transform: scale(1.05)
+
 
 .container
 	margin: 0px
@@ -39,7 +31,7 @@ $transform: scale(1.05)
 	font-size: 20px
 	display: inline-block
 	padding-right: 0px
-	margin-left: 90px
+	margin-left: 60px
 
 .active
 	color: white
@@ -50,18 +42,38 @@ $transform: scale(1.05)
 	text-align: right 
 
 
-
-
 .GroupTop
 	display: flex
+	justify-content: space-between
 	margin-left: 7.3%
+	margin-right: 5%
+
+.groupBottom
+	display: flex
+	justify-content: space-between
+	
 .Group1
 	margin-left: 0.4%
+	display: flex
+	justify-content: space-around
+	flex-flow: wrap
+
+.Group2
+	margin-left: 8%
+	margin-right: 0.5%
+	display: flex
+	justify-content: space-around
+	flex-flow: wrap
 
 .columnRight1
 	width: 150px
-	height: 465px
+	height: 455px
 	margin-left: 10%
+
+.columnRight2
+	width: 150px
+	height: 910px
+	margin-right: 55px
 	
 .navBarTopNews
 	background-color: grey
@@ -76,24 +88,26 @@ $transform: scale(1.05)
 	color: white
 	text-decoration: none
 
+.popular
+	background-color: grey
+	width: 100%
+	height: 30px
+
+.popular p
+	font-size: 20px
+	color: white
+	margin-top: 3px
+	margin-left: 40px
+
 
 .FirstRow
 	width: 100%
 	display: flex
+	justify-content: space-between
+	flex-flow: wrap
 
 .imageAndText
 	position: relative
-	box-shadow: $box-shadow
-	-webkit-transition: width 2s, height 2s, -webkit-transform 2s /* Safari */
-	transition: $transition
-	transition-timing-function: $transition-timing-function
-
-.imageAndText:hover
-	width: $widthImmages
-	height: 200px
-	box-shadow: $box-shadow
-	transform: $transform
-	transition-timing-function: $transition-timing-function	
 	
 .textAlignmentFirstRow
 	background-color: #000
@@ -102,27 +116,29 @@ $transform: scale(1.05)
 	bottom: 0px
 	width: 300px
 	height: 50px
-	margin-left: 5px
+	margin: 2%
 	
 
 .SecondRow
 	width: 100%
 	display: flex
+	justify-content: space-between
+	flex-flow: wrap
 
 .textAlignmentSecondRow
 	background-color: #000
 	color: white
 	position: absolute
-	bottom: -14px
+	bottom: 0px
 	width: 300px
 	height: 50px
-	margin-left: 5px
+	margin: 2%
 	
 
-.images 
+.images1 
 	width: 300px
 	height: 200px
-	margin-left: 5px
+	margin: 2%
 
 .imagesToHide 
 	width: 300px
@@ -130,74 +146,49 @@ $transform: scale(1.05)
 	margin-left: 5px
 	display: none
 
-.navBarPopular
-	background-color: grey
-	width: 100%
-
-
-.navBarFormatPopular
-	font-size: 20px
-	display: inline-block	
-
-.activePopular
-	color: white
-	text-decoration: none
-
 .developer
-	width: 90%
-	margin-left: 5%
-
-.GroupBottom
-	display: flex
-	margin-left: 7.3%
+	width: 75%
+	margin-left: 16%
 
 .images2
+	
 	width: $dimentionPicSecondGroup
 	height: $dimentionPicSecondGroup
-	margin-left: $margin-leftGroup2
+
+	
+.textAlignmentFirstRow2
+	background-color: #000
+	color: white
+	position: absolute
+	bottom: 5px
+	width: $dimentionPicSecondGroup
+	height: $BackgroundTextGroup2
+
 
 .textAlignmentSecondRow2
 	background-color: #000
 	color: white
 	position: absolute
-	bottom: -14px
+	bottom: -20px
 	width: $dimentionPicSecondGroup
 	height: $BackgroundTextGroup2
-	margin-left: $margin-leftGroup2
+	
 
-.textAlignmentFirstRow2
-	background-color: #000
-	color: white
-	position: absolute
-	bottom: 0px
-	width: $dimentionPicSecondGroup
-	height: $BackgroundTextGroup2
-	margin-left: $margin-leftGroup2
 .imageAndText2
 	position: relative
-	font-size: 26px
-	box-shadow: $box-shadow
-	-webkit-transition: width 2s, height 2s, -webkit-transform 2s /* Safari */
-	transition: $transition
-	transition-timing-function: $transition-timing-function
-
-.imageAndText2:hover
-	width: $widthImmages
-	height: 200px
-	box-shadow: $box-shadow
-	transform: $transform
-	transition-timing-function: $transition-timing-function	
+	font-size: 20px
+	
+.FirstRow2
+	width: 100%
+	display: flex
+	justify-content: space-between
+	flex-flow: wrap
 
 .SecondRow2
 	width: 100%
 	display: flex
-.FirstRow2
-	width: 100%
-	display: flex
-.columnRight2
-	width: 150px
-	height: 920px
-	margin-left: 10%
+	justify-content: space-between
+	flex-flow: wrap
 
 .navBarFooter
 	background-color: #000
@@ -214,12 +205,11 @@ $transform: scale(1.05)
 	color: white
 	text-decoration: none
 .effectsfooter
-	// display: flex
 	background-color: #000
 	justify-content: space-around
 	width: 100%
 
-.logoHeaderfooter
+.logofooter
 	width: 100%
 	text-align: right
 .logoCopyright
@@ -236,42 +226,84 @@ $transform: scale(1.05)
 	font-size: 20px
 	display: inline-block	
 
-.activePopular
-	color: white
-	text-decoration: none	
-
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 1980px) 										/* for PC devices */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) 	/* for Tablet devices */
+@media (min-width: 320px) and (max-width: 480px)								/* for mobile devices */
 	body
-
-	.container
 		
-		// background-color: yellow
-
-	.ImagesToColumn
-		display: flex
-	
-
-	.mobileFlex1
-		display: flex
-		// flex-direction: column
-
-		// display: flex
-		
-		// flex-wrap: wrap
-		// align-items: stretch
-		// display: flex
-		// flex-flow: row
-		// display: flex
-		// flex-wrap: wrap
+	.navBarFormat
+		font-size: 20px
+		display: inline-block
+		padding-right: 0px
+		margin-left: 10px
 
 	.columnRight1
 		display: none 
 
-
 	.columnRight2
-		display: none 
+		display: none
+
+	.newsToHide
+		display: none
 
 	.imagesToHide
 		display: block 
+		width: 300px	
+		height: 200px	
 
+	.banner3
+		display: none
+
+	.bannerHeader
+		display: none
+	
+	.currentTime
+		display: none
+
+	.images2
+		width: 300px
+		height: 200px
+		margin: 2%
+
+	
+	.textAlignmentSecondRow2
+		background-color: #000
+		color: white
+		position: absolute
+		bottom: -14px
+		width: 300px
+		height: 50px
+		margin: 2%
+
+	.textAlignmentFirstRow2
+		background-color: #000
+		color: white
+		position: absolute
+		bottom: 0px
+		width: 300px
+		height: 50px
+		margin: 2%
+		margin-bottom: 2%
+	
+	.imageAndText2
+		position: relative
+		font-size: 18px
 		
+	.imageAndText2:hover
+		width: none
+		height: none
+		
+	.navBarFormatFooter
+		margin-left: 40px
+		padding-right: 20px
+	
+	.logoHeader
+		-webkit-transition: width 3s, height 3s, -webkit-transform 3s /* Safari */
+		transition: width 3s, height 3s, transform 3s
+		transition-timing-function: ease-in-out
+
+	.logoHeader:hover
+		-webkit-transform: rotate(360deg) /* Safari */
+		transform: rotate(360deg)
+		transition-timing-function: ease-in-out
+
